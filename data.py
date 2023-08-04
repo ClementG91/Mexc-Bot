@@ -2,7 +2,7 @@ from ta import trend, momentum
 from messages import MESSAGE_TEMPLATE, subAccountName
 
 
-def calculate_indicators(dflist, trixLength, trixSignal):
+def calculate_indicators(dflist):
     for coin in dflist:
         df = dflist[coin]
         df.drop(columns=df.columns.difference(
